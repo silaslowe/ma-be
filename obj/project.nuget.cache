@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "pahRuRb+Teyq7yq711kvmHhZOC9SK/z5s50rvAmxf6O02Qp2EtEJk8jnKX75LWUlQUIN8TEjPIBICKTtYyCkow==",
+  "success": true,
+  "projectFilePath": "/Users/silaslowe/RiderProjects/MusicMoney/MusicMoney.csproj",
+  "expectedPackageFiles": [
+    "/Users/silaslowe/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/silaslowe/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/silaslowe/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/Users/silaslowe/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/Users/silaslowe/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/Users/silaslowe/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
