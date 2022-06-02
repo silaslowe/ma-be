@@ -2,15 +2,16 @@ using System.Reflection.Metadata.Ecma335;
 using Microsoft.AspNetCore.Http.Features;
 using MusicMoney.Entities;
 
-namespace MusicMoney.Repositories
-{
-    public class InMemExpensesRepository
+namespace MusicMoney.Repository
+{  
+    
+    public class InMemExpensesRepository : IExpensesRepository
     {
         private readonly List<Expense> expenses = new()
         {
             new Expense
             {
-                Id = Guid.NewGuid(), Name = "Strings", Cost = 1099, Tax = 37, Vendor = "South Austin Music",
+                Id = Guid.NewGuid(), Name = "Strings", Cost =   1099, Tax = 37, Vendor = "South Austin Music",
                 CreateDate = DateTimeOffset.UtcNow
             },
             new Expense

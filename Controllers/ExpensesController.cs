@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using MusicMoney.Entities;
-using MusicMoney.Repositories;
+using MusicMoney.Repository;
 
 namespace MusicMoney.Controllers
 {
@@ -8,24 +8,24 @@ namespace MusicMoney.Controllers
     [Route("expenses")]
     public class ExpensesController : ControllerBase
     {
-        private readonly InMemExpensesRepository _repository;
+        private readonly IExpensesRepository repository;
 
-        public ExpensesController()
+        public ExpensesController( IExpensesRepository repository)
         {
-            _repository = new InMemExpensesRepository();
+            this.repository = repository;
         }
 
         [HttpGet]
         public IEnumerable<Expense> GetExpenses()
         {
-            var expenses = _repository.GetExpenses();
+            var expenses = repository.GetExpenses();
             return expenses;
         }
 
         [HttpGet("{id}")]
         public ActionResult<Expense> GetExpense(Guid id)
         {
-            var expense = _repository.GetExpense(id);
+            var expense = repository.GetExpense(id);
 
             if (expense is null)
             {
